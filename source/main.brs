@@ -3,11 +3,8 @@
 sub Main()
 
     reg = CreateObject("roRegistrySection", "profile")
-    if reg.Exists("primaryfeed") then
-        url = reg.Read("primaryfeed")
-    else
-        url = "https://tinyurl.com/yaoc6zpo"
-    end if
+        url = "http://10.10.0.12/channels.m3u"
+ 
 
     screen = CreateObject("roSGScreen")
     m.port = CreateObject("roMessagePort")
